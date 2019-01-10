@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* CSS Document */
+body {
+	margin: 0;
+	background-color: black;
+	overflow: hidden;
+}
+#panel {
+	position: absolute;
+	background-color: black;
+	padding: 50px;
+	display: none;
+	width: 100%;
+	height: 50em;
+}
+.content {
+	position: static;
+	width: 100%;
+	height: 70vh;
+}
+.content video {
+	width: 100%;
+	max-height: 100%;
+}
+.center {
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: auto;
+	font-size: 30px;
+	margin-top: 17em;
+	text-align: center;
+	font-family: arial;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/navbar.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").hide();
+  $("h1").delay(3000).fadeIn(6000);
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("h1").mouseover(function(){
+    $("h1").slideUp();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("a").click(function(){
+    $("#panel").fadeIn();
+    $("h1").fadeOut("fast");
+  });
+});
+</script>
+
+</head>
+<body>
+<div class="navbar">
+	<div class="navigation">
+		<a href="index.html"> home </a>
+		<a href="html/about.html"> about </a>
+		<a href="html/work.html"> work </a>
+		<a href="html/music.html"> music </a>
+		<a href="demo.html"> Demo </a>	</div>
+		<div class="socialmedia">
+		<a> <img src="media/images/snapchat.png"  height="auto" alt=""/></a>
+		<a> <img src="media/images/facebook.jpg"  height="auto" alt=""/></a>
+		<a> <img src="media/images/instagram.png" height="auto" alt=""/></a>
+	</div>
+</div>
+<div class="center"><h1> MURA MASA </h1></div>
+
+<iframe src="media/videos/silence.mp3" allow="autoplay" id="audio" style="display:none"> </iframe>
+
+<div class="content"> 
+<video autoplay loop id="background" src="media/videos/background.mp4#t=13.5"></video>
+</div>
+
+</body>
+</html>
